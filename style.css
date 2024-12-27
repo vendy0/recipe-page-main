@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /* Prevent font size inflation */
@@ -98,6 +100,14 @@ body{
   align-items: center;
   justify-content: center;
 }
+li{
+  margin: 10px;
+  }
+  
+  li::marker{
+    margin: 10px;
+    font-size: 10px;
+  }
 
 .recipe-container{
   width: 400px;
@@ -111,15 +121,18 @@ body{
   border-radius: 5px;
 }
 
-h1{}
+h1{
+padding: 20px 0;
+}
 
 p{
 	font-size: 16px;
 }
 
 .preparation-time{
+  border-radius: 10px;
   background: var(--clr-rose-50);
-  padding: 10px;
+  padding: 30px;
   margin: 15px 0;
 }
 
@@ -127,12 +140,8 @@ h3{
   color: var(--clr-rose-800);
 }
 
-li::marker{
-  font-size: 10px;
-}
-
 .preparation-time li::marker{
-    
+  color: var(--clr-rose-800);
 }
 
 .preparation-time .item{
