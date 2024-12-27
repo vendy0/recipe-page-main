@@ -116,6 +116,7 @@ ul{
   }
 
 ul li::marker{
+  color: var(--clr-brown-800);
       padding: 10px;
       font-size: 10px;
 }
@@ -127,14 +128,14 @@ ol{
  margin: 15px 10px;
     padding-left: 10px;
     text-indent: 0;
-    list-style-position: inside;
 }
-ol li {
-  display: flex; 
-  flex-direction: row;
-  align-items: flex-start;
+ol li{
+padding-left: 20px;
+} 
+ol li::marker{
+color: var(--clr-brown-800);
+font-weight: bold;
 }
-  
 
 .recipe-container{
   width: 600px;
@@ -155,10 +156,6 @@ h1{
 padding: 25px 0;
 }
 
-p{
-	font-size: 16px;
-}
-
 .preparation-time{
   border-radius: 10px;
   background: var(--clr-rose-50);
@@ -174,7 +171,7 @@ h3{
   color: var(--clr-rose-800);
 }
 
-.preparation-time .item{
+.item{
   font-weight: bold;
 }
 
