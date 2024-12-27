@@ -90,6 +90,7 @@ textarea:not([rows]) {
 }
 
 body{
+  color: var(--clr-stone-900);
 	position: relative;
   background: var(--clr-stone-100);
   display: flex;
@@ -102,13 +103,53 @@ body{
   width: 400px;
   background: var(--clr-white);
   border-radius: 20px;
-  padding: 20px;
+  padding: 25px;
   margin: 50px;
-
 }
+
+.recipe-container img{
+  border-radius: 5px;
+}
+
+h1{}
 
 p{
 	font-size: 16px;
+}
+
+.preparation-time{
+  background: var(--clr-rose-50);
+  padding: 10px;
+  margin: 15px 0;
+}
+
+h3{
+  color: var(--clr-rose-800);
+}
+
+li::marker{
+  font-size: 10px;
+}
+
+.preparation-time li::marker{
+    
+}
+
+.preparation-time .item{
+  font-weight: bold;
+}
+
+.ingredients{}
+
+h2{
+  color: var(--clr-brown-800);
+}
+
+
+
+
+hr{
+  opacity: 0.2;
 }
 
 outfit{
