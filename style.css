@@ -103,35 +103,32 @@ body{
 }
 h1, h2{
   font-weight: 400;
-font-family: 'young-serif', sans-serif;
+	font-family: 'young-serif', sans-serif;
 }
 
-ul{
+ul, ol{
   display: flex;
   flex-direction: column;
   gap: 10px;
- margin: 15px 10px;
-    padding-left: 10px;
-    text-indent: 15px;
+	margin: 15px 10px;
+  padding-left: 10px;
+  text-indent: 15px;
   }
 
 ul li::marker{
   color: var(--clr-brown-800);
-      padding: 10px;
-      font-size: 10px;
-    }
-    
-    ol{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
- margin: 15px 10px;
-    padding-left: 10px;
-    text-indent: 0;
+  padding: 10px;
+  font-size: 10px;
 }
+    
+ol{
+  text-indent: 0;
+}
+
 ol li{
 padding-left: 20px;
 } 
+
 ol li::marker{
 color: var(--clr-brown-800);
 font-weight: bold;
@@ -220,6 +217,34 @@ font-size: 16px;
 	margin: 10px;
 }
 
+
+.attribution {
+  font-size: 0.75em;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, white
+, transparent);
+  color: var(--clr-rose-800);
+  font-weight: bold;
+}
+
+.attribution a {
+  color: var(--clr-stone-600);
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.attribution a:hover, .attribution a:focus {
+	color: var(--clr-rose-800);
+}
+
+
 @media screen and (max-width:765px){
 	.recipe-container{
 		-webkit-border-radius: 0;
@@ -227,6 +252,7 @@ font-size: 16px;
 		border-radius: 0;
 		margin: 0;
 		width: 100vw;
+		padding-bottom: 30px;
 	}
 	.recipe{
 		padding-top: 10px;
@@ -239,5 +265,8 @@ font-size: 16px;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		border-radius: 0;
+	}
+	.attribution{
+		  background: linear-gradient(to top, hsl(30, 15%, 75%), transparent);
 	}
 }
